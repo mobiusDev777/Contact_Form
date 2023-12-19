@@ -18,15 +18,15 @@
     <input class="form-control" id="emailID" name="email" type="text" placeholder="name@example.com">
     <label>Message:</label>
     <textarea class="form-control" name="msg" rows="4" placeholder="Enter your message here"></textarea>
-    <button type="submit" class="btn btn-primary" name="send" disabled="true">Send</button> 
+    <button type="submit" class="btn btn-primary" name="send">Send</button> 
   </fieldset>
  </form>
 <script>
   const fromBody = document.getElementById('contact-form');
   const emailID = document.getElementById('emailID');
   const regex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-  emailID.addEventListener('input', (e) => {
-    if(e.target.value.match(regex)) console.log('valid')
+  // emailID.addEventListener('input', (e) => {
+    // if(e.target.value.match(regex)) console.log('valid')
   });
 </script>
 </body>
